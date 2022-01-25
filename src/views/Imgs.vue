@@ -100,7 +100,8 @@ export default {
   display: flex;
   justify-content: space-between;
   z-index: 3;
-  width: 876px;
+  width: 75%;
+  max-width: 878px;
   background-color: transparent;
 }
 button {
@@ -125,8 +126,8 @@ button:hover {
   gap: 26px;
 }
 .imgContainer {
-  width: 356px;
-  height: 256px;
+  width: 316px;
+  height: 216px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -140,8 +141,9 @@ button:hover {
   transform: scale(1.2);
 }
 .slideContainer {
-  width: 812px;
-  height: 512px;
+  width: 70%;
+  max-width: 878px;
+  height: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -150,12 +152,12 @@ button:hover {
   z-index: 2;
 }
 .slider {
-  width: 812px;
+  width: 100%;
   display: flex;
 }
 .item {
-  width: 812px;
-  height: 512px;
+  width: 100%;
+  height: auto;
 }
 .item > img {
   width: 100%;
@@ -163,5 +165,11 @@ button:hover {
   object-fit: cover;
   overflow: hidden;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 825px) {
+  .container {
+    width: 90%;
+  }
 }
 </style>
